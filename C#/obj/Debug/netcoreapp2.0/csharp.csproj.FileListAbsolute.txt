@@ -1,0 +1,10 @@
+D:\Code\AlgorithmsAndDataStructs\c#\bin\Debug\netcoreapp2.0\csharp.deps.json
+D:\Code\AlgorithmsAndDataStructs\c#\bin\Debug\netcoreapp2.0\csharp.runtimeconfig.json
+D:\Code\AlgorithmsAndDataStructs\c#\bin\Debug\netcoreapp2.0\csharp.runtimeconfig.dev.json
+D:\Code\AlgorithmsAndDataStructs\c#\bin\Debug\netcoreapp2.0\csharp.dll
+D:\Code\AlgorithmsAndDataStructs\c#\bin\Debug\netcoreapp2.0\csharp.pdb
+D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.csproj.CoreCompileInputs.cache
+D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.AssemblyInfoInputs.cache
+D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.AssemblyInfo.cs
+D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.dll
+D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.pdb
