@@ -19,55 +19,56 @@ namespace csharp
             }
 
         }
-    }
-    public class Tree
-    {
-        public Node root;
+        public class Tree
+        {
+            public Node root;
 
-        public void insert(int value)
-        {
-            root = insertRecurse(value, root);
-            Console.WriteLine(value + " was inserted");
-        }
-        public bool search(int value)
-        {
-            return searchRecurse(value, root);
-        }
-        private Node insertRecurse(int value, Node node)
-        {
-
-            if (node == null)
+            public void insert(int value)
             {
-                node = new Node(value);
-                return node;
+                root = insertRecurse(value, root);
+                Console.WriteLine(value + " was inserted");
             }
-            if (node.value == value)
-                return node;
-            Node next = value > node.value ? node.right : node.left;
-            return insertRecurse(value, next);
-
-        }
-
-        public bool searchRecurse(int value, Node node)
-        {
-            if (node == null)
+            public bool search(int value)
             {
-                return false;
+                return searchRecurse(value, root);
+            }
+            private Node insertRecurse(int value, Node node)
+            {
+
+                if (node == null)
+                {
+                    node = new Node(value);
+                    return node;
+                }
+                if (node.value == value)
+                    return node;
+                Node next = value > node.value ? node.right : node.left;
+                return insertRecurse(value, next);
 
             }
-            if (node.value == value)
+
+            public bool searchRecurse(int value, Node node)
             {
-                return true;
+                if (node == null)
+                {
+                    return false;
+
+                }
+                if (node.value == value)
+                {
+                    return true;
+                }
+                Node next = value > node.value ? node.right : node.left;
+                return searchRecurse(value, next);
             }
-            Node next = value > node.value ? node.right : node.left;
-            return searchRecurse(value, next);
+        }
+        public class Node
+        {
+            public int value;
+            public Node left;
+            public Node right;
+            public Node(int value) { this.value = value; }
         }
     }
-    public class Node
-    {
-        public int value;
-        public Node left;
-        public Node right;
-        public Node(int value) { this.value = value; }
-    }
+
 }
