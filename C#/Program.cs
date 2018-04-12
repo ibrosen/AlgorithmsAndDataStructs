@@ -10,9 +10,14 @@ namespace csharp
             // Console.WriteLine("-------------------");
             // BinaryTree.RunBinaryTree();
 
-            Console.WriteLine("Running BreadthFirstSearch");
+            // Console.WriteLine("Running BreadthFirstSearch");
+            // Console.WriteLine("--------------------------");
+            // BreadthFirstSearch.RunBreadthFirstSearch(1, 6);
+
+
+            Console.WriteLine("Running DepthFirstSearch");
             Console.WriteLine("--------------------------");
-            BreadthFirstSearch.RunBreadthFirstSearch(6);
+            DepthFirstSearch.RunDepthFirstSearch(1);
 
         }
     }

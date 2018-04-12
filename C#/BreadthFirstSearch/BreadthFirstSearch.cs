@@ -9,14 +9,14 @@ namespace csharp
 {
     public class BreadthFirstSearch
     {
-        public static void RunBreadthFirstSearch(int targetVertex)
+        public static void RunBreadthFirstSearch(int startVertex, int targetVertex)
         {
             Graph g = new Graph();
             g.ReadInGraph("GraphData.txt");
             Queue<Vertex> queue = new Queue<Vertex>();
             List<int> visited = new List<int>();
-            queue.Enqueue(g.GetVertex(1));
-            visited.Add(1);
+            queue.Enqueue(g.GetVertex(startVertex));
+            visited.Add(startVertex);
             bool found = false;
             int layer = 1;
             while (queue.Count != 0 && !found)
