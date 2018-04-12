@@ -14,10 +14,18 @@ namespace csharp
             // Console.WriteLine("--------------------------");
             // BreadthFirstSearch.RunBreadthFirstSearch(1, 6);
 
+            // Console.WriteLine("Running DepthFirstSearch");
+            // Console.WriteLine("------------------------");
+            // DepthFirstSearch.RunDepthFirstSearch(1);
 
-            Console.WriteLine("Running DepthFirstSearch");
-            Console.WriteLine("--------------------------");
-            DepthFirstSearch.RunDepthFirstSearch(1);
+            // Console.WriteLine("Running QuickSort");
+            // Console.WriteLine("-----------------");
+            // Sorting.QuickSort.RunQuickSort();
+
+
+            Console.WriteLine("Running MergeSort");
+            Console.WriteLine("-----------------");
+            Sorting.MergeSort.RunMergeSort();
 
         }
     }

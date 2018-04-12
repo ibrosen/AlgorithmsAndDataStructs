@@ -14,7 +14,7 @@ namespace csharp
             Graph g = new Graph();
             g.ReadInGraph("GraphData.txt");
             Queue<Vertex> queue = new Queue<Vertex>();
-            List<int> visited = new List<int>();
+            HashSet<int> visited = new HashSet<int>();
             queue.Enqueue(g.GetVertex(startVertex));
             visited.Add(startVertex);
             bool found = false;
