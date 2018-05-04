@@ -8,3 +8,13 @@ D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.AssemblyInfoI
 D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.AssemblyInfo.cs
 D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.dll
 D:\Code\AlgorithmsAndDataStructs\c#\obj\Debug\netcoreapp2.0\csharp.pdb
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\bin\Debug\netcoreapp2.0\csharp.deps.json
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\bin\Debug\netcoreapp2.0\csharp.runtimeconfig.json
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\bin\Debug\netcoreapp2.0\csharp.runtimeconfig.dev.json
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\bin\Debug\netcoreapp2.0\csharp.dll
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\bin\Debug\netcoreapp2.0\csharp.pdb
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\obj\Debug\netcoreapp2.0\csharp.csproj.CoreCompileInputs.cache
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\obj\Debug\netcoreapp2.0\csharp.AssemblyInfoInputs.cache
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\obj\Debug\netcoreapp2.0\csharp.AssemblyInfo.cs
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\obj\Debug\netcoreapp2.0\csharp.dll
+C:\Users\ilanb\Documents\Code\Personal\AlgorithmsAndDataStructs\C#\obj\Debug\netcoreapp2.0\csharp.pdb

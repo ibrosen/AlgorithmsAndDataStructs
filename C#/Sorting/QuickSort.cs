@@ -63,7 +63,7 @@ namespace csharp.Sorting
 
             }
 
-            return indexLow;
+            return left;
         }
     }
 }
