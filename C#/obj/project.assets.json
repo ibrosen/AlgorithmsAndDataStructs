@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilanb\\Documents\\Code\\Personal\\AlgorithmsAndDataStructs\\C#\\csharp.csproj",
+      "projectUniqueName": "C:\\Users\\ilanb\\Documents\\Code\\Personal\\AlgorithmsAndDataStructs\\c#\\csharp.csproj",
       "projectName": "csharp",
-      "projectPath": "C:\\Users\\ilanb\\Documents\\Code\\Personal\\AlgorithmsAndDataStructs\\C#\\csharp.csproj",
+      "projectPath": "C:\\Users\\ilanb\\Documents\\Code\\Personal\\AlgorithmsAndDataStructs\\c#\\csharp.csproj",
       "packagesPath": "C:\\Users\\ilanb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilanb\\Documents\\Code\\Personal\\AlgorithmsAndDataStructs\\C#\\obj\\",
+      "outputPath": "C:\\Users\\ilanb\\Documents\\Code\\Personal\\AlgorithmsAndDataStructs\\c#\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

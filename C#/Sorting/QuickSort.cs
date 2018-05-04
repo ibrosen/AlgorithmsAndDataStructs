@@ -9,7 +9,7 @@ namespace csharp.Sorting
     {
         public static void RunQuickSort()
         {
-            int[] array = Helpers.RandomIntArray(100);
+            int[] array = Helpers.RandomIntArray(20);
             Console.WriteLine("");
             Sort(array, 0, array.Length - 1);
 
@@ -30,7 +30,7 @@ namespace csharp.Sorting
             if (indexLow < indexHigh)
             {
                 int p = Partition(array, indexLow, indexHigh);
-                Sort(array, indexLow, p);
+                Sort(array, indexLow, p - 1);
                 Sort(array, p + 1, indexHigh);
             }
         }
@@ -43,23 +43,35 @@ namespace csharp.Sorting
             while (left < right)
             {
 
-                if (array[left] > pivot && array[right] <= pivot)
-                {
-                    //swap
-                    int tmp = array[left];
-                    array[left] = array[right];
-                    array[right] = tmp;
 
-
-                }
-                if (array[left] <= pivot)
+                //if our current item is the pivot, we don't want to move past it, hence it's only < and >, not
+                //<= and >=. This ensures that our pivot will end up in the centre, which is important
+                //as when we sort, we sort from low -> p-1 and from p+1 -> high, as we need to assume that
+                //we can skip p 
+                while (array[left] < pivot && left < right)
                 {
                     left++;
                 }
-                if (array[right] > pivot)
+                while (array[right] > pivot && left < right)
                 {
                     right--;
                 }
+
+
+
+
+
+                int tmp = array[left];
+                array[left] = array[right];
+                array[right] = tmp;
+
+
+
+                //prevents deadlock if both left and right == pivot
+                if (array[left] == pivot)
+                    right--;
+
+
 
             }
 
