@@ -57,21 +57,14 @@ namespace csharp.Sorting
                     right--;
                 }
 
-
-
-
-
                 int tmp = array[left];
                 array[left] = array[right];
                 array[right] = tmp;
 
 
-
                 //prevents deadlock if both left and right == pivot
                 if (array[left] == pivot)
                     right--;
-
-
 
             }
 
