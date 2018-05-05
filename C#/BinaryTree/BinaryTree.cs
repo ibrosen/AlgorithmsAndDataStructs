@@ -23,27 +23,32 @@ namespace csharp
         {
             public Node root;
 
+
+            public Tree()
+            {
+                root = null;
+            }
             public void insert(int value)
             {
-                root = insertRecurse(value, root);
+                insertRecurse(value, root);
                 Console.WriteLine(value + " was inserted");
             }
             public bool search(int value)
             {
                 return searchRecurse(value, root);
             }
-            private Node insertRecurse(int value, Node node)
+            private void insertRecurse(int value, Node node)
             {
 
                 if (node == null)
                 {
                     node = new Node(value);
-                    return node;
+
                 }
                 if (node.value == value)
-                    return node;
+                    return;
                 Node next = value > node.value ? node.right : node.left;
-                return insertRecurse(value, next);
+                insertRecurse(value, next);
 
             }
 
