@@ -9,7 +9,7 @@ namespace csharp.Sorting
     {
         public static void RunQuickSort()
         {
-            int[] array = Helpers.RandomIntArray(20);
+            int[] array = Helpers.RandomIntArray(100);
             Console.WriteLine("");
             Sort(array, 0, array.Length - 1);
 
@@ -17,6 +17,7 @@ namespace csharp.Sorting
             {
                 Console.Write(array[i] + " ");
             }
+
         }
         public static void test(int[] a)
         {
@@ -30,14 +31,16 @@ namespace csharp.Sorting
             if (indexLow < indexHigh)
             {
                 int p = Partition(array, indexLow, indexHigh);
-                Sort(array, indexLow, p - 1);
+                Sort(array, indexLow, p);
                 Sort(array, p + 1, indexHigh);
             }
         }
 
         public static int Partition(int[] array, int indexLow, int indexHigh)
         {
-            int pivot = array[indexLow];
+            Random r = new Random();
+            int randIndex = r.Next(indexLow, indexHigh);
+            int pivot = array[randIndex];
             int left = indexLow;
             int right = indexHigh;
             while (left < right)
@@ -45,21 +48,23 @@ namespace csharp.Sorting
 
 
                 //if our current item is the pivot, we don't want to move past it, hence it's only < and >, not
-                //<= and >=. This ensures that our pivot will end up in the centre, which is important
-                //as when we sort, we sort from low -> p-1 and from p+1 -> high, as we need to assume that
-                //we can skip p 
-                while (array[left] < pivot && left < right)
+                //<= and >=. This ensures that our pivot ends up in the right spot
+                while (array[left] < pivot)
                 {
                     left++;
                 }
-                while (array[right] > pivot && left < right)
+                while (array[right] > pivot)
                 {
                     right--;
                 }
 
-                int tmp = array[left];
-                array[left] = array[right];
-                array[right] = tmp;
+                if (left < right)
+                {
+                    int tmp = array[left];
+                    array[left] = array[right];
+                    array[right] = tmp;
+                }
+
 
 
                 //prevents deadlock if both left and right == pivot
