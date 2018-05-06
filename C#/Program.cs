@@ -26,9 +26,17 @@ namespace csharp
             // Console.WriteLine("-----------------");
             // Sorting.MergeSort.RunMergeSort();
 
-            Console.WriteLine("Running QuickSelect");
-            Console.WriteLine("-----------------");
-            QuickSelect.RunQuickSelect();
+            // Console.WriteLine("Running QuickSelect");
+            // Console.WriteLine("-------------------");
+            // QuickSelect.RunQuickSelect();
+
+            // Console.WriteLine("Running Permutations");
+            // Console.WriteLine("--------------------");
+            // Permutations.RunPermutations();
+
+            Console.WriteLine("Running ReverseNumber");
+            Console.WriteLine("---------------------");
+            ReverseNum.RunReverseNum();
 
         }
     }
