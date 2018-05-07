@@ -10,9 +10,9 @@ namespace csharp
             // Console.WriteLine("-------------------");
             // BinaryTree.RunBinaryTree();
 
-            // Console.WriteLine("Running BreadthFirstSearch");
-            // Console.WriteLine("--------------------------");
-            // BreadthFirstSearch.RunBreadthFirstSearch(1, 6);
+            Console.WriteLine("Running BreadthFirstSearch");
+            Console.WriteLine("--------------------------");
+            BreadthFirstSearch.RunBreadthFirstSearch();
 
             // Console.WriteLine("Running DepthFirstSearch");
             // Console.WriteLine("------------------------");
@@ -34,9 +34,9 @@ namespace csharp
             // Console.WriteLine("--------------------");
             // Permutations.RunPermutations();
 
-            Console.WriteLine("Running ReverseNumber");
-            Console.WriteLine("---------------------");
-            ReverseNum.RunReverseNum();
+            // Console.WriteLine("Running ReverseNumber");
+            // Console.WriteLine("---------------------");
+            // ReverseNum.RunReverseNum();
 
         }
     }

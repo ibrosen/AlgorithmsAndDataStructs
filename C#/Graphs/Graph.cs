@@ -21,6 +21,11 @@ namespace csharp.Graphs
             return vertices.Where(vertex => vertex.value == value).First();
         }
 
+        public int Size()
+        {
+            return vertices.Count;
+        }
+
         public Graph()
         {
             vertices = new List<Vertex>();

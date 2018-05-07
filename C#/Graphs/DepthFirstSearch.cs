@@ -18,7 +18,10 @@ namespace csharp
             Explore(g, startVertex, visited);
 
 
-            /* If we were to do it iteratively, not recursively, use a stack */
+            /* If we were to do it iteratively, not recursively, use a stack 
+             * Although this would search a nodes neighbours in reverse order
+             * As the last neighbour would be the first to be searched (stack) 
+            **/
             Console.WriteLine("Iterative");
             Stack<Vertex> stack = new Stack<Vertex>();
             visited = new HashSet<int>();
